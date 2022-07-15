@@ -120,12 +120,12 @@
 <p><strong>Note:</strong> You might need to install the app to your account. Click on <em>Install App</em> in the right menu and install it to your account. This step will probably land on the specified callback URL which either is not yet deployed or is it blank. That's OK, you can navigate back to GitHub and ensure the app was installed.</p>
 <h3>
 <a id="user-content-5-set-environment-secrets" class="anchor" href="#5-set-environment-secrets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. Set environment secrets</h3>
-<p>Using Now CLI set the two secrets:</p>
-<div class="highlight highlight-source-shell"><pre>now secrets add oauth-client-id <span class="pl-k">&lt;</span>client-id-of-GitHub-App<span class="pl-k">&gt;</span>
-now secrets add oauth-client-secret <span class="pl-k">&lt;</span>client-secret-of-GitHub-App<span class="pl-k">&gt;</span></pre></div>
+<p>Using Vercel CLI set the two secrets:</p>
+<div class="highlight highlight-source-shell"><pre>vercel env add oauth-client-id <span class="pl-k">&lt;</span>client-id-of-GitHub-App<span class="pl-k">&gt;</span>
+vercel env add oauth-client-secret <span class="pl-k">&lt;</span>client-secret-of-GitHub-App<span class="pl-k">&gt;</span></pre></div>
 <h3>
 <a id="user-content-6-deploy-your-website" class="anchor" href="#6-deploy-your-website" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6. Deploy your website</h3>
-<p>Either run <code>now --prod</code> or use the GitHub integration to deploy your project to the production domain.</p>
+<p>Either run <code>vercel --prod</code> or use the GitHub integration to deploy your project to the production domain.</p>
 <p>Navigate to <code>https://&lt;domain&gt;/admin</code> and click on <em>Login with GitHub</em>. The first time you log in, you need to authorise your GitHub App. Make sure you give permissions to the right repo.</p>
 <p>After successful authentication, you should be redirected back to Netlify CMS interface.</p>
 <h3>

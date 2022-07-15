@@ -2,7 +2,7 @@ backend:
   name: github
   repo: anthony4tner/netlify-cms-now # CHANGE ME
   branch: master
-  base_url: https://illi.ac # CHANGE ME
+  base_url: https://netlify-cms-now-ten.vercel.app/ # CHANGE ME
   auth_endpoint: api/auth
 
 media_folder: /img
